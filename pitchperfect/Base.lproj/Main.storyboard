@@ -50,6 +50,8 @@
                     </view>
                     <connections>
                         <outlet property="recordLabel" destination="NLw-Pi-xS1" id="0XD-0K-DCT"/>
+                        <outlet property="startRecord" destination="zrw-Fb-pKa" id="Ywj-a1-vVr"/>
+                        <outlet property="stopRecord" destination="OQj-KA-owD" id="Z0d-TG-6jP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

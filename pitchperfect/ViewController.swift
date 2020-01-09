@@ -11,10 +11,17 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var recordLabel: UILabel!
+    @IBOutlet weak var startRecord: UIButton!
+    @IBOutlet weak var stopRecord: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear called")
     }
 
     override func didReceiveMemoryWarning() {
