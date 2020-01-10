@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        stopRecord.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,9 +32,14 @@ class ViewController: UIViewController {
     @IBAction func startRecording(_ sender: Any) {
         print("record button pressed")
         recordLabel.text = "Recording in progress..."
+        stopRecord.isEnabled = true
+        startRecord.isEnabled = false
     }
     
     @IBAction func stopRecording(_ sender: Any) {
         print("stop button pressed")
+        recordLabel.text = "Tap to record..."
+        stopRecord.isEnabled = false
+        startRecord.isEnabled = true
     }
 }
