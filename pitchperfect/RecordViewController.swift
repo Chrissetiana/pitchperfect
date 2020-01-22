@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordViewController.swift
 //  pitchperfect
 //
 //  Created by Chrisse Tiana on 06/01/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordViewController: UIViewController {
 
     @IBOutlet weak var recordLabel: UILabel!
     @IBOutlet weak var startRecord: UIButton!
