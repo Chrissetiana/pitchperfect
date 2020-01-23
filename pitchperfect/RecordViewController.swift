@@ -27,6 +27,14 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         print("viewWillAppear called")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "stopRecording" {
+            let playSoundsVC = segue.destination as! PlayViewController
+            let recordedAudioURL = sender as! URL
+            playSoundsVC.recordedAudioURL = recordedAudioURL
+        }
+    }
+    
     @IBAction func startRecording(_ sender: Any) {
         print("record button pressed")
         recordLabel.text = "Recording in progress..."
