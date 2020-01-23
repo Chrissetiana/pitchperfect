@@ -31,7 +31,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K22-5N-LjH"/>
-                                    <segue destination="xwL-cR-abF" kind="show" id="JzF-ad-AAi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLw-Pi-xS1">
@@ -57,16 +56,17 @@
                         <outlet property="recordLabel" destination="NLw-Pi-xS1" id="0XD-0K-DCT"/>
                         <outlet property="startRecord" destination="zrw-Fb-pKa" id="Ywj-a1-vVr"/>
                         <outlet property="stopRecord" destination="OQj-KA-owD" id="Z0d-TG-6jP"/>
+                        <segue destination="xwL-cR-abF" kind="show" identifier="stopRecording" id="48R-HF-jxF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Play View Controller-->
         <scene sceneID="Vca-TL-sIB">
             <objects>
-                <viewController id="xwL-cR-abF" sceneMemberID="viewController">
+                <viewController id="xwL-cR-abF" customClass="PlayViewController" customModule="pitchperfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uWI-aI-8HB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

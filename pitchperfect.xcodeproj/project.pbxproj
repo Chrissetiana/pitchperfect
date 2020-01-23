@@ -13,6 +13,7 @@
 		02135C9223C48D16005814B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02135C9023C48D16005814B4 /* Main.storyboard */; };
 		02135C9423C48D16005814B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02135C9323C48D16005814B4 /* Assets.xcassets */; };
 		02135C9723C48D16005814B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02135C9523C48D16005814B4 /* LaunchScreen.storyboard */; };
+		02135CA12455C8B1005814B4 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02135CA02455C8B1005814B4 /* PlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		02135C9323C48D16005814B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02135C9623C48D16005814B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02135C9823C48D16005814B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02135CA02455C8B1005814B4 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		02135C8923C48D16005814B4 /* pitchperfect */ = {
 			isa = PBXGroup;
 			children = (
+				02135C9823C48D16005814B4 /* Info.plist */,
 				02135C8A23C48D16005814B4 /* AppDelegate.swift */,
-				02135C8C23C48D16005814B4 /* SceneDelegate.swift */,
+				02135CA02455C8B1005814B4 /* PlayViewController.swift */,
 				02135C8E23C48D16005814B4 /* RecordViewController.swift */,
-				02135C9023C48D16005814B4 /* Main.storyboard */,
+				02135C8C23C48D16005814B4 /* SceneDelegate.swift */,
 				02135C9323C48D16005814B4 /* Assets.xcassets */,
 				02135C9523C48D16005814B4 /* LaunchScreen.storyboard */,
-				02135C9823C48D16005814B4 /* Info.plist */,
+				02135C9023C48D16005814B4 /* Main.storyboard */,
 			);
 			path = pitchperfect;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02135CA12455C8B1005814B4 /* PlayViewController.swift in Sources */,
 				02135C8F23C48D16005814B4 /* RecordViewController.swift in Sources */,
 				02135C8B23C48D16005814B4 /* AppDelegate.swift in Sources */,
 				02135C8D23C48D16005814B4 /* SceneDelegate.swift in Sources */,
