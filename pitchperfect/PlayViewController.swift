@@ -10,12 +10,26 @@ import UIKit
 
 class PlayViewController: UIViewController {
     
+    @IBOutlet weak var slowButton: UIButton!
+    @IBOutlet weak var fastButton: UIButton!
+    @IBOutlet weak var hPitchButton: UIButton!
+    @IBOutlet weak var lPitchButton: UIButton!
+    @IBOutlet weak var echoButton: UIButton!
+    @IBOutlet weak var reverbButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    
     var recordedAudioURL: URL!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func playSound(_ sender: UIButton) {
+        print("play sound button pressed")
+    }
+    
+    @IBAction func stopSound(_ sender: AnyObject) {
+        print("stop audio button pressed")
     }
     
 
